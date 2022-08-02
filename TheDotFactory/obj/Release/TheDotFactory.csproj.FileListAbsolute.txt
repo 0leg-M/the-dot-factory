@@ -1,0 +1,11 @@
+d:\the-dot-factory-master\TheDotFactory\bin\Release\TheDotFactory.exe.config
+d:\the-dot-factory-master\TheDotFactory\bin\Release\TheDotFactory.exe
+d:\the-dot-factory-master\TheDotFactory\bin\Release\TheDotFactory.pdb
+d:\the-dot-factory-master\TheDotFactory\obj\Release\TheDotFactory.AboutForm.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Release\TheDotFactory.InputBoxDialog.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Release\TheDotFactory.MainForm.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Release\TheDotFactory.OutputConfigurationForm.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Release\TheDotFactory.Properties.Resources.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Release\TheDotFactory.csproj.GenerateResource.Cache
+d:\the-dot-factory-master\TheDotFactory\obj\Release\TheDotFactory.exe
+d:\the-dot-factory-master\TheDotFactory\obj\Release\TheDotFactory.pdb

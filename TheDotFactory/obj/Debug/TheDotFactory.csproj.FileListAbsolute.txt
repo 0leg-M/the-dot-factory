@@ -1,0 +1,12 @@
+d:\the-dot-factory-master\TheDotFactory\bin\Debug\TheDotFactory.exe.config
+d:\the-dot-factory-master\TheDotFactory\bin\Debug\TheDotFactory.exe
+d:\the-dot-factory-master\TheDotFactory\bin\Debug\TheDotFactory.pdb
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.csprojResolveAssemblyReference.cache
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.AboutForm.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.InputBoxDialog.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.MainForm.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.OutputConfigurationForm.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.Properties.Resources.resources
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.csproj.GenerateResource.Cache
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.exe
+d:\the-dot-factory-master\TheDotFactory\obj\Debug\TheDotFactory.pdb

@@ -36,7 +36,7 @@ namespace TheDotFactory
         private static String nl = Environment.NewLine;
 
         // application version
-        public const string ApplicationVersion = "0.1.4";
+        public const string ApplicationVersion = "0.1.5";
 
         // current loaded bitmap
         private Bitmap m_currentLoadedBitmap = null;
@@ -361,60 +361,9 @@ namespace TheDotFactory
         {
             string inputText = txtInputText.Text;
 
-            //
-            // Expand and remove all ranges from the input text (look for << x - y >>
-            //
-
-            // espand the ranges into the input text
-            expandAndRemoveCharacterRanges(ref inputText);
-            
-            //
-            // iterate through the inputted text and shove to sorted string, removing all duplicates
-            //
-
-            // sorted list for insertion/duplication removal
-            SortedList<char, char> characterList = new SortedList<char, char>();
-
-            // iterate over the characters in the textbox
-            for (int charIndex = 0; charIndex < inputText.Length; ++charIndex)
-            {
-                // get teh char
-                char insertionCandidateChar = inputText[charIndex];
-
-                // insert the char, if not already in the list and if not space ()
-                if (!characterList.ContainsKey(insertionCandidateChar))
-                {
-                    // check if space character
-                    if (insertionCandidateChar == ' ' && !m_outputConfig.generateSpaceCharacterBitmap)
-                    {
-                        // skip - space is not encoded rather generated dynamically by the driver
-                        continue;
-                    }
-
-                    // dont generate newlines
-                    if (insertionCandidateChar == '\n' || insertionCandidateChar == '\r')
-                    {
-                        // no such characters
-                        continue;
-                    }
-
-                    // not in list, add
-                    characterList.Add(inputText[charIndex], ' ');
-                }
-            }
-
-            // now output the sorted list to a string
-            string characterListString = "";
-
-            // iterate over the sorted characters to create the string
-            foreach (char characterKey in characterList.Keys)
-            {
-                // add to string
-                characterListString += characterKey;
-            }
-
-            // return the character
-            return characterListString;
+            string pattern = "\r\n";
+            Regex reg_exp = new Regex(pattern);
+            return reg_exp.Replace(inputText, "");
         }
 
         // convert a letter to bitmap
@@ -1433,13 +1382,16 @@ namespace TheDotFactory
                 foreach (CharacterDescriptorArrayBlock.Character character in block.characters)
                 {
                     // add character
-                    resultTextSource += String.Format("\t{{{0}{1}{2}}}, \t\t{3}{4}{5}" + nl,
+                    if (getCharacterDescString(m_outputConfig.descCharWidth, character.width) != "0, ")
+                    {
+                        resultTextSource += String.Format("\t{{{0}{1}{2}}}, \t\t{3}{4}{5}" + nl,
                                                     getCharacterDescString(m_outputConfig.descCharWidth, character.width),
                                                     getCharacterDescString(m_outputConfig.descCharHeight, character.height),
                                                     character.offset,
                                                     m_commentStartString,
                                                     character.character,
                                                     m_commentEndString + " ");
+                    }
                 }
 
                 // terminate current block

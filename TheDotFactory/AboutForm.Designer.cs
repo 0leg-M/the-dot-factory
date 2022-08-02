@@ -123,7 +123,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Copyright 2009-2010, Eran \"Pavius\" Duchan";
+            this.label2.Text = "Copyright 2009-2022, Eran \"Pavius\" Duchan";
             // 
             // label1
             // 

@@ -189,7 +189,7 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 760);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 728);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(998, 22);
             this.statusStrip1.TabIndex = 3;
@@ -209,7 +209,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel3);
-            this.splitContainer1.Size = new System.Drawing.Size(998, 736);
+            this.splitContainer1.Size = new System.Drawing.Size(998, 704);
             this.splitContainer1.SplitterDistance = 478;
             this.splitContainer1.TabIndex = 4;
             this.splitContainer1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.splitContainer1_MouseUp);
@@ -227,7 +227,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(474, 732);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(474, 700);
             this.tableLayoutPanel4.TabIndex = 8;
             // 
             // label1
@@ -300,6 +300,7 @@
             this.txtInputText.Location = new System.Drawing.Point(3, 89);
             this.txtInputText.Multiline = true;
             this.txtInputText.Name = "txtInputText";
+            this.txtInputText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtInputText.Size = new System.Drawing.Size(448, 577);
             this.txtInputText.TabIndex = 10;
             // 
@@ -357,7 +358,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(18, 42);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 13);
+            this.label12.Size = new System.Drawing.Size(56, 13);
             this.label12.TabIndex = 12;
             this.label12.Text = "Insert text:";
             // 
@@ -366,7 +367,7 @@
             this.lblFont.AutoSize = true;
             this.lblFont.Location = new System.Drawing.Point(43, 16);
             this.lblFont.Name = "lblFont";
-            this.lblFont.Size = new System.Drawing.Size(33, 13);
+            this.lblFont.Size = new System.Drawing.Size(31, 13);
             this.lblFont.TabIndex = 1;
             this.lblFont.Text = "Font:";
             // 
@@ -455,7 +456,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(43, 16);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 13);
+            this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 9;
             this.label7.Text = "Path:";
             // 
@@ -504,7 +505,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 214F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(512, 732);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(512, 700);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // panel1
@@ -533,14 +534,14 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(492, 640);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(492, 608);
             this.tableLayoutPanel5.TabIndex = 17;
             // 
             // label13
             // 
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(3, 504);
+            this.label13.Location = new System.Drawing.Point(3, 478);
             this.label13.Margin = new System.Windows.Forms.Padding(3);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(486, 12);
@@ -555,7 +556,7 @@
             this.txtOutputTextSource.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtOutputTextSource.Location = new System.Drawing.Point(3, 21);
             this.txtOutputTextSource.Name = "txtOutputTextSource";
-            this.txtOutputTextSource.Size = new System.Drawing.Size(486, 477);
+            this.txtOutputTextSource.Size = new System.Drawing.Size(486, 451);
             this.txtOutputTextSource.TabIndex = 16;
             this.txtOutputTextSource.Text = "";
             this.txtOutputTextSource.WordWrap = false;
@@ -579,9 +580,9 @@
             this.txtOutputTextHeader.ContextMenuStrip = this.ctxMenuHeader;
             this.txtOutputTextHeader.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtOutputTextHeader.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOutputTextHeader.Location = new System.Drawing.Point(3, 522);
+            this.txtOutputTextHeader.Location = new System.Drawing.Point(3, 496);
             this.txtOutputTextHeader.Name = "txtOutputTextHeader";
-            this.txtOutputTextHeader.Size = new System.Drawing.Size(486, 115);
+            this.txtOutputTextHeader.Size = new System.Drawing.Size(486, 109);
             this.txtOutputTextHeader.TabIndex = 14;
             this.txtOutputTextHeader.Text = "";
             this.txtOutputTextHeader.WordWrap = false;
@@ -685,7 +686,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(17, 14);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(42, 13);
+            this.label15.Size = new System.Drawing.Size(40, 13);
             this.label15.TabIndex = 29;
             this.label15.Text = "Preset:";
             // 
@@ -815,7 +816,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 782);
+            this.ClientSize = new System.Drawing.Size(998, 750);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
